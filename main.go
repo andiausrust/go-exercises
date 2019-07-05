@@ -1,12 +1,10 @@
 package main
 
+
 func main() {
 
-	cards := deck{"ace of diamonds", newCard()}
+	cards := newDeckFromFile("myCards")
 	cards.printDeck()
-}
-
-func newCard() string {
-	return "five diamonds"
 
 }
+
